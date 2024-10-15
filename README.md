@@ -933,7 +933,7 @@ body {
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
-                <img src="https://i.postimg.cc/Fz2XC6WH/Whats-App-Image-2024-08-19-at-06-13-30-1b87dd3a-removebg-preview.png" alt="Nysa Logo" class="footer-logo">
+                <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=035" alt="Nysa Logo" class="footer-logo">
                 <p>Explore, Create, Connect Unlock Infinite Possibilities with Nysa</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
