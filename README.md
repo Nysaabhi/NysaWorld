@@ -1,4 +1,3 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -154,6 +153,7 @@ body {
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
     flex-shrink: 0;
     text-transform: uppercase;
@@ -553,7 +553,7 @@ body {
 }
 
 .contract-code-container {
-    height: 250px;
+    height: 285px;
     background-color: #f8f8f8;
     border-radius: 8px;
     padding: 10px;
@@ -902,20 +902,46 @@ body {
             <div class="search-suggestions" id="searchSuggestions"></div>
         </div>
         <div class="filter-container">
-            <button class="filter-btn active" data-filter="all"><i class="fas fa-globe"></i> All</button>
-            <button class="filter-btn" data-filter="crypto"><i class="fas fa-coins"></i> Crypto</button>
-            <button class="filter-btn" data-filter="nft"><i class="fas fa-image"></i> NFT</button>
-            <button class="filter-btn" data-filter="person"><i class="fas fa-user"></i> Web3 People</button>
-            <button class="filter-btn" data-filter="event"><i class="fas fa-calendar-alt"></i> Events</button>
-            <button class="filter-btn" data-filter="smart-contract"><i class="fas fa-file-code"></i> Smart Contracts</button>
-            <button class="filter-btn" data-filter="metaverse"><i class="fas fa-vr-cardboard"></i> Metaverse</button>
-<button class="filter-btn" data-filter="metaverse-concert">
-  <i class="fas fa-music"></i> Concert
-</button>
-            <button class="filter-btn" data-filter="event"><i class="fas fa-calendar-alt"></i> Web3 Event</button>
-            <button class="filter-btn" data-filter="crypto-insurance"><i class="fas fa-shield-alt"></i> Web3 Insurance</button>
+            <button class="filter-btn active" data-filter="all" style="background-color: #4CAF50;"><i class="fas fa-globe"></i> All</button>
+            <button class="filter-btn" data-filter="crypto" style="background-color: #FFD700;"><i class="fas fa-coins"></i> Crypto</button>
+            <button class="filter-btn" data-filter="nft" style="background-color: #FF69B4;"><i class="fas fa-image"></i> NFT</button>
+            <button class="filter-btn" data-filter="person" style="background-color: #87CEFA;"><i class="fas fa-user"></i> Web3 People</button>
+            <button class="filter-btn" data-filter="event" style="background-color: #FF4500;"><i class="fas fa-calendar-alt"></i> Events</button>
+            <button class="filter-btn" data-filter="smart-contract" style="background-color: #8A2BE2;"><i class="fas fa-file-code"></i> Smart Contracts</button>
+            <button class="filter-btn" data-filter="metaverse" style="background-color: #20B2AA;"><i class="fas fa-vr-cardboard"></i> Metaverse</button>
+            <button class="filter-btn" data-filter="metaverse-concert" style="background-color: #FF6347;"><i class="fas fa-music"></i> Concert</button>
+            <button class="filter-btn" data-filter="gig-job" style="background-color: #2E8B57;"><i class="fas fa-user-tie"></i> GIG Job</button>
+            <button class="filter-btn" data-filter="education" style="background-color: #DAA520;"><i class="fas fa-graduation-cap"></i> Education</button>
+            <button class="filter-btn" data-filter="job" style="background-color: #4682B4;"><i class="fas fa-briefcase"></i> Job</button>
+            <button class="filter-btn" data-filter="crypto-insurance" style="background-color: #FF8C00;"><i class="fas fa-shield-alt"></i> Web3 Insurance</button>
+            <button class="filter-btn" data-filter="airdrop" style="background-color: #FF1493;"><i class="fas fa-parachute-box"></i> Airdrop</button>
+            <button class="filter-btn" data-filter="stake" style="background-color: #8B0000;"><i class="fas fa-coins"></i> Stake</button>
+            <button class="filter-btn" data-filter="liquidity" style="background-color: #00CED1;"><i class="fas fa-tint"></i> Liquidity</button>
+            <button class="filter-btn" data-filter="crypto-wallet" style="background-color: #8FBC8F;"><i class="fas fa-wallet"></i> Crypto Wallet</button>
+            <button class="filter-btn" data-filter="mining" style="background-color: #B22222;"><i class="fas fa-cog"></i> Mining</button>
+            <button class="filter-btn" data-filter="crypto-atm" style="background-color: #4682B4;"><i class="fas fa-money-bill-wave"></i> Crypto ATM</button>
+            <button class="filter-btn" data-filter="web3-tools" style="background-color: #708090;"><i class="fas fa-tools"></i> Web3 Tools</button>
+            <button class="filter-btn" data-filter="digital-assets" style="background-color: #9370DB;"><i class="fas fa-file-alt"></i> Digital Assets</button>
+            <button class="filter-btn" data-filter="debit-card" style="background-color: #32CD32;"><i class="fas fa-credit-card"></i> Debit Card</button>
+            <button class="filter-btn" data-filter="savings-account" style="background-color: #6B8E23;"><i class="fas fa-piggy-bank"></i> Savings Account</button>
+            <button class="filter-btn" data-filter="crypto-exchanges" style="background-color: #D2691E;"><i class="fas fa-exchange-alt"></i> Crypto Exchanges</button>
+            <button class="filter-btn" data-filter="articles" style="background-color: #FF4500;"><i class="fas fa-newspaper"></i> Articles</button>
+            <button class="filter-btn" data-filter="e-books" style="background-color: #8A2BE2;"><i class="fas fa-book"></i> E-Books</button>
+            <button class="filter-btn" data-filter="charity-projects" style="background-color: #4682B4;"><i class="fas fa-hands-helping"></i> Charity Projects</button>
+            <button class="filter-btn" data-filter="p2p-games" style="background-color: #FF6347;"><i class="fas fa-gamepad"></i> P2P Games</button>
+            <button class="filter-btn" data-filter="virtual-reality" style="background-color: #20B2AA;"><i class="fas fa-vr-cardboard"></i> Virtual Reality</button>
+            <button class="filter-btn" data-filter="lottery-tickets" style="background-color: #FF69B4;"><i class="fas fa-ticket-alt"></i> Lottery Tickets</button>
+            <button class="filter-btn" data-filter="merchants" style="background-color: #2E8B57;"><i class="fas fa-store"></i> Merchants</button>
+            <button class="filter-btn" data-filter="web3-tax-law" style="background-color: #DAA520;"><i class="fas fa-balance-scale"></i> Web3 Tax Law</button>
+            <button class="filter-btn" data-filter="api" style="background-color: #8FBC8F;"><i class="fas fa-code"></i> API</button>
+            <button class="filter-btn" data-filter="lend-borrow" style="background-color: #708090;"><i class="fas fa-handshake"></i> Lend & Borrow</button>
+            <button class="filter-btn" data-filter="marketplaces" style="background-color: #9370DB;"><i class="fas fa-shopping-cart"></i> Marketplaces</button>
+            <button class="filter-btn" data-filter="tournaments" style="background-color: #32CD32;"><i class="fas fa-trophy"></i> Tournaments</button>
+            <button class="filter-btn" data-filter="tourism" style="background-color: #6B8E23;"><i class="fas fa-suitcase-rolling"></i> Tourism</button>
+            <button class="filter-btn" data-filter="web3-business-directory" style="background-color: #D2691E;"><i class="fas fa-address-book"></i> Web3 Business Directory</button>
+            <button class="filter-btn" data-filter="defi-protocols" style="background-color: #8B0000;"><i class="fas fa-network-wired"></i> DeFi Protocols</button>
         </div>
-<div class="separator-line"></div>
+                <div class="separator-line"></div>
 
         <div id="cardsContainer"></div>
     </main>
