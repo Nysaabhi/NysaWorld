@@ -2933,4 +2933,3 @@ initializeTradingViewWidget(cardData);
 </script>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 </body>
-</html>
