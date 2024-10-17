@@ -153,7 +153,6 @@ body {
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
     flex-shrink: 0;
     text-transform: uppercase;
@@ -299,7 +298,7 @@ body {
     color: #ffffff;
 }
 
-.chart-section, .image-carousel {
+.chart-section, .image-carousel, .crypto-atm {
     padding: 10px;
     background-color: #f8f8f8;
     margin: 8px;
@@ -392,7 +391,7 @@ body {
 
 .token-info, .nft-info, .web3-person-info, .contract-info,
 .metaverse-info, .job-info, .education-info, .gig-info, 
-.event-info, .concert-info, .insurance-info {
+.event-info, .concert-info, .insurance-info, .airdrop-info {
     display: flex;
     justify-content: space-between;
     padding: 6px 10px;
@@ -408,7 +407,7 @@ body {
     background-color: #e6f7ff;
 }
 
-.job-info, .education-info, .gig-info, .event-info, .concert-info, .insurance-info {
+.job-info, .education-info, .gig-info, .event-info, .concert-info, .insurance-info, .airdrop-info {
     background-color: #f0f4f8;
 }
 
@@ -886,6 +885,7 @@ body {
         margin-right: 20px;
     }
 }
+
     </style>
 </head>
 <body>
@@ -916,8 +916,10 @@ body {
             <button class="filter-btn" data-filter="crypto-insurance" style="background-color: #FF8C00;"><i class="fas fa-shield-alt"></i> Web3 Insurance</button>
             <button class="filter-btn" data-filter="airdrop" style="background-color: #FF1493;"><i class="fas fa-parachute-box"></i> Airdrop</button>
             <button class="filter-btn" data-filter="stake" style="background-color: #8B0000;"><i class="fas fa-coins"></i> Stake</button>
-            <button class="filter-btn" data-filter="liquidity" style="background-color: #00CED1;"><i class="fas fa-tint"></i> Liquidity</button>
-            <button class="filter-btn" data-filter="crypto-wallet" style="background-color: #8FBC8F;"><i class="fas fa-wallet"></i> Crypto Wallet</button>
+            <button class="filter-btn" data-filter="liquidity" style="background-color: #00CED1;">
+                <i class="fas fa-tint"></i> Liquidity
+            </button>
+                        <button class="filter-btn" data-filter="crypto-wallet" style="background-color: #8FBC8F;"><i class="fas fa-wallet"></i> Crypto Wallet</button>
             <button class="filter-btn" data-filter="mining" style="background-color: #B22222;"><i class="fas fa-cog"></i> Mining</button>
             <button class="filter-btn" data-filter="crypto-atm" style="background-color: #4682B4;"><i class="fas fa-money-bill-wave"></i> Crypto ATM</button>
             <button class="filter-btn" data-filter="web3-tools" style="background-color: #708090;"><i class="fas fa-tools"></i> Web3 Tools</button>
@@ -941,7 +943,7 @@ body {
             <button class="filter-btn" data-filter="web3-business-directory" style="background-color: #D2691E;"><i class="fas fa-address-book"></i> Web3 Business Directory</button>
             <button class="filter-btn" data-filter="defi-protocols" style="background-color: #8B0000;"><i class="fas fa-network-wired"></i> DeFi Protocols</button>
         </div>
-                <div class="separator-line"></div>
+        <div class="separator-line"></div>
 
         <div id="cardsContainer"></div>
     </main>
@@ -997,7 +999,6 @@ body {
             &copy; 2024 Nysa Search Engine. All rights reserved.
         </div>
     </footer>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -2246,10 +2247,111 @@ contract MyToken is ERC20 {
         <p>If you're ready to dive into the world of Web3 development, enroll today and start your journey into decentralized technologies.</p>
     `
 },
+{
+    elementId: 'airdrop-token',
+    logo: 'https://cryptologos.cc/logos/airdrop-air-logo.svg?v=025',
+    title: 'AirToken Airdrop',
+    subtitle: 'Participate in our community airdrop',
+    airdropDate: 'October 20, 2024',
+    airdropAmount: '100 AirTokens',  
+    gradient: 'linear-gradient(135deg, #6B46C1 0%, #9F7AEA 100%)',
+      detailBoxes: [
+        { 
+            title: 'Overview', 
+            content: 'Community Rewards Program', 
+            gradient: 'linear-gradient(135deg, #6B46C1 0%, #9F7AEA 100%)',
+            fullDetails: `
+                <h3>AirToken Airdrop Overview</h3>
+                <p>Join our community rewards program and earn AirTokens for your participation and engagement.</p>
+            `
+        },
+        { 
+            title: 'Eligibility', 
+            content: 'Open to all community members', 
+            gradient: 'linear-gradient(135deg, #805AD5 0%, #B794F4 100%)',
+            fullDetails: `
+                <h3>Eligibility Criteria</h3>
+                <ul>
+                    <li>Must be a member of our Telegram group</li>
+                    <li>Follow our Twitter account</li>
+                    <li>Complete simple tasks to earn points</li>
+                </ul>
+            `
+        },
+        { 
+            title: 'Distribution', 
+            content: 'Based on participation points', 
+            gradient: 'linear-gradient(135deg, #553C9A 0%, #9F7AEA 100%)',
+            fullDetails: `
+                <h3>Token Distribution</h3>
+                <p>AirTokens will be distributed based on the points earned through community participation. The more you engage, the more tokens you receive!</p>
+            `
+        }
+    ],
+    airdropInfo: [
+        { label: 'Total Tokens', value: '1,000,000 AIR' },
+        { label: 'Participants', value: 'Up to 10,000' },
+        { label: 'Duration', value: '30 days' }
+    ],
+    buttons: [
+        { text: 'Register', class: 'btn-primary' },
+        { text: 'Learn More', class: 'btn-secondary' },
+        { text: 'Share', class: 'btn-secondary' }
+    ],
+    socialLinks: [
+        { icon: 'fab fa-telegram', url: '#' },
+        { icon: 'fab fa-twitter', url: '#' },
+        { icon: 'fab fa-discord', url: '#' }
+    ],
+    type: 'airdrop',
+    airdropDescription: `
+        <h2>About AirToken Airdrop</h2>
+        <p>AirToken is excited to announce our community airdrop program! This is your chance to be part of our growing ecosystem and earn tokens for your participation.</p>
+        
+        <h2>How to Participate</h2>
+        <ol>
+            <li>Join our Telegram group</li>
+            <li>Follow us on Twitter</li>
+            <li>Complete daily tasks to earn points</li>
+            <li>Invite friends for bonus points</li>
+        </ol>
+
+        <h2>Token Utility</h2>
+        <p>AirTokens can be used for governance voting, accessing premium features, and trading on partnered exchanges.</p>
+        
+        <h2>Important Dates</h2>
+        <ul>
+            <li>Registration Opens: July 1, 2024</li>
+            <li>Airdrop Starts: July 15, 2024</li>
+            <li>Distribution: August 15, 2024</li>
+        </ul>
+
+        <h2>Terms and Conditions</h2>
+        <p>Participation in the AirToken airdrop is subject to our terms and conditions. Please ensure you read and understand these before participating.</p>
+    `
+},
+
             // ... (you can add more smart contract cards here) ...
         ];
         
 function createCardHeader(data) {
+    if (data.type === 'liquidity') {
+        return `
+            <div class="card-header" style="background: ${data.gradient}">
+                <div class="header-content">
+                    <img src="${data.logo}" alt="${data.title}" class="logo" style="width: 50px; height: 50px; object-fit: cover;">
+                    <div class="header-title">
+                        <h2 class="title">${data.title}</h2>
+                        <div class="subtitle">${data.subtitle}</div>
+                    </div>
+                </div>
+                <div class="price-change">
+                    <span class="price">${data.price}</span>
+                    <span class="change">${data.change}</span>
+                </div>
+            </div>
+        `;
+    }
     if (data.type === 'smart-contract') {
         return `
             <div class="card-header" style="background: ${data.gradient}">
@@ -2348,6 +2450,23 @@ if (data.type === 'education') {
         </div>
     `;
 }
+if (data.type === 'airdrop') {
+    return `
+        <div class="card-header" style="background: ${data.gradient}">
+            <div class="header-content">
+                <img src="${data.logo}" alt="${data.title}" class="logo" style="width: 50px; height: 50px; object-fit: cover;">
+                <div class="header-title">
+                    <h2 class="title">${data.title}</h2>
+                    <div class="subtitle">${data.subtitle}</div>
+                </div>
+            </div>
+            <div class="airdrop-info">
+                <span class="airdrop-date">${data.airdropDate}</span>
+                <span class="airdrop-amount">${data.airdropAmount}</span>
+            </div>
+        </div>
+    `;
+}
 if (data.type === 'job') {
     return `
         <div class="card-header" style="background: ${data.gradient}">
@@ -2436,6 +2555,18 @@ function createDetailBoxes(data) {
 }
 
 function createTokenInfo(data) {
+    if (data.type === 'liquidity') {
+        return `
+            <div class="token-info">
+                ${data.tokenInfo.map(info => `
+                    <div class="token-info-item">
+                        <div>${info.label}</div>
+                        <div class="token-info-value">${info.value}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
     if (data.type === 'smart-contract') {
         return `
             <div class="contract-info">
@@ -2508,6 +2639,18 @@ if (data.type === 'education') {
         </div>
     `;
 }
+if (data.type === 'airdrop') {
+        return `
+            <div class="airdrop-info">
+                ${data.airdropInfo.map(info => `
+                    <div class="airdrop-info-item">
+                        <div>${info.label}</div>
+                        <div class="airdrop-info-value">${info.value}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
 if (data.type === 'job') {
     return `
         <div class="job-info">
@@ -2558,6 +2701,13 @@ if (data.type === 'job') {
 }
 
         function createChartSection(data) {
+            if (data.type === 'liquidity') {
+        return `
+            <div class="chart-section">
+                <div id="${data.elementId}-tv-chart-container" style="height: 100%;"></div>
+            </div>
+        `;
+    }
             if (data.type === 'smart-contract') {
                 return `
                     <div class="contract-code-container">
@@ -2604,6 +2754,13 @@ if (data.type === 'job') {
                     </div>
                 `;
             }
+            if (data.type === 'airdrop') {
+    return `
+        <div class="scrollable-description">
+            ${data.airdropDescription}
+        </div>
+    `;
+}
             if (data.type === 'job') {
                 return `
                     <div class="scrollable-description">
@@ -2711,6 +2868,7 @@ function initializeTradingViewWidget(cardData) {
         }
     }
 }
+
 
     function renderCards(filteredData = cardsData) {
         cardsContainer.innerHTML = '';
